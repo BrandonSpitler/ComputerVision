@@ -1,0 +1,6 @@
+C=1
+B=2
+
+a=([cos(C)*cos(B)],[-1*sin(C)],cos(C)*sin(B))
+
+%% 
