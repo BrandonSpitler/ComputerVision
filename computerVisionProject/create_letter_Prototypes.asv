@@ -1,10 +1,10 @@
 
 
-[a,minVector]=RecognizeCharacters;
+[a,minVector]=RecognizeCharacters('L-K.jpg');
 
 
 
-image = imread('image.jpg');
+image = imread('L-S.jpg');
 originalImage = image;
 %image =  double(image);
 image = rgb2gray(image);
@@ -18,7 +18,8 @@ dots = [];
 
 % all non two part character label
 for d=1:1:row
-    if(checkDots == 0)
-         imshow(orginalImage(minVector(,):minVector(,),minVector(,):minVector(,),:));
-    end  
+    %break and imwrite(tempImage, 'z-l.jpg')
+    tempImage=originalImage(minVector(d,1):minVector(d,3),minVector(d,2):minVector(d,4),:);
+        imshow(tempImage);  
+        
 end

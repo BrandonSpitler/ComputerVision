@@ -1,10 +1,10 @@
 
 
-[a,minVector]=RecognizeCharacters;
+[a,minVector]=RecognizeCharacters('l-s.jpg');
 
 
 
-image = imread('sentence.jpg');
+image = imread('l-s.jpg');
 originalImage = image;
 %image =  double(image);
 image = rgb2gray(image);

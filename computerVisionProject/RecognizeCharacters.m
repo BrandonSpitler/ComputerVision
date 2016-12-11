@@ -1,8 +1,8 @@
-function [output, minVector] = RecognizeCharacters()
+function [output, minVector] = RecognizeCharacters(imageFileName)
 %TwoPassAlgorithm
 % First pass to detect boundaries of letters
 % Second pass to label letters
-image = imread('sentence.jpg');
+image = imread(imageFileName);
 originalImage = image;
 %image =  double(image);
 image = rgb2gray(image);
